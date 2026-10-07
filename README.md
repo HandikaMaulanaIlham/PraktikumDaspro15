@@ -2,7 +2,7 @@ Ini adalah repository pertama saya
 Nama : Handika Maulana Ilham
 NIM : 264107060076
 Kelas : SIB-1A
-Hasil Uji Studi Kasus 2 oleh <Benedict Clever Tambunan>
+Hasil Uji Studi Kasus 2 oleh Benedict Clever Tambunan
 | No | Jenis    | Dokumen | Juara/Dana | Output             | Sesuai? |
 |----|----------|---------|------------|--------------------|---------|
 | 1  | BELMAWA  |       4 |          1 |  Berhak            |      Ya |
