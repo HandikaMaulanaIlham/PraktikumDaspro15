@@ -6,7 +6,7 @@ public class StudiKasus215 {
         Scanner sc = new Scanner(System.in);
 
         String Nama, jenisLomba;
-        byte juara, uploadDoc;
+        byte juara, uploadDoc, statusPKM;
 
         System.out.print("Nama Mahasiswa : ");
         Nama = sc.nextLine();
@@ -29,6 +29,22 @@ public class StudiKasus215 {
             } else{
                 System.out.println("Inputan tidak valid");
             } 
-        }  
+        } else if (jenisLomba.equalsIgnoreCase("PKM")) {
+            System.out.print("Status PKM (1(lolos)/0(Tidak lolos)) : ");
+            statusPKM = sc.nextByte();
+            System.out.print("Jumlah Dokumen (0-4) : ");
+            uploadDoc = sc.nextByte();
+            if (statusPKM == 1 && uploadDoc == 4) {
+                System.out.println("Data Lengkap. Dana penghargaan diberikan");
+            }else if (statusPKM == 0 && uploadDoc == 4) {
+                System.out.println("Tidak lolos pendanaan PKM. Dana tidak diberikan");
+            } else if (statusPKM == 0 && uploadDoc < 4 ) {
+                System.out.println("Tidak lolos pendanaan PKM. Dana tidak diberikan");
+            } else {
+                System.out.println("Inputan tidak valid");
+            }
+        } else {
+            System.out.println("Dana Penghargaan tidak diberikan");
+        }
     }
 }
